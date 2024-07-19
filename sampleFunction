@@ -1,0 +1,30 @@
+def calculate_area(length, width):
+    """Calculate the area of a rectangle"""
+    area = length * width
+    return area
+area = calculate_area(100, 3)
+print("The area of the rectangle will be", area)
+def user_info(age, name):
+    print(f"name : {name}")
+    print(f"age : {age}")
+user_info(name = 40, age = "Bob")
+count = 0
+def increment():
+    global count
+    count +=1
+    print(f"Value of count inside increment function: {count}")
+increment()
+count += 1
+print(f"Value of count outside increment function: {count}")
+
+def outer_function():
+    x = 10
+    def inner_function():
+        nonlocal x
+        x += 5
+    inner_function()
+    print("Modified value of x from inner function:", x)
+outer_function()
+
+
+
