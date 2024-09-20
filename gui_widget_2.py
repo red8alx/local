@@ -1,0 +1,15 @@
+import tkinter
+frame = tkinter.Tk()
+frame.title("GUI")
+# add widgets here
+lbl1= tkinter.Label(frame, text="First Name")
+lbl2 = tkinter.Label(frame, text="Last Name")
+e1 = tkinter.Entry(frame)
+e2 = tkinter.Entry(frame)
+btn = tkinter.Button(frame, text="Login", width=10)
+lbl1.grid(row=0,column=0)
+lbl2.grid(row=1,column=0)
+e1.grid(row=0,column=1)
+e2.grid(row=1,column=1)
+btn.grid(row=2, column=1)
+frame.mainloop()
